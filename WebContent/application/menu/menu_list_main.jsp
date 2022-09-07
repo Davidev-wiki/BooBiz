@@ -13,11 +13,14 @@
 	</style>
 </head>
 <body>
-	<div class="body title">
-		<p>main화면의 첫 페이지 입니다.</p>
-	</div>
-	<div class="body contents">
-		<p>이곳에 컨텐츠가 들어갑니다.</p>
+	<div class="menu_list_main_wrapper">
+		<div class="menu_list_main_content blank" style="background-color:yellow;"></div>
+		<div class="menu_list_main_content videos" style="background-color:blue;">
+			<div class="videos title">창업 컨텐츠</div>
+			<div class="video">
+				<iframe width="400" height="300" src="https://www.youtube.com/embed/ePEbUq_U-mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
