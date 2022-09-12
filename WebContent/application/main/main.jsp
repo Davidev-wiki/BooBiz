@@ -18,16 +18,21 @@
 	<script src="../main/js/menu_list_main.js"></script>
 	
 </head>
+<!-- 프레임 세팅 -->
+<frameset rows="120,*" frameborder="NO" border="0">
+	<frameset cols="200,*" frameborder="NO" border="0">
+		<frame src="../img/test_Logo.PNG" name="top" scrolling="NO" noresize marginwidth="0">
+		<frame src="../img/main_banner.PNG" name="main" scrolling="auto" noresize>
+	</frameset>
+	<frameset cols="200,*" frameborder="NO" border="0">
+		<frame src="menu.jsp" name="left" scrolling="auto" noresize marginwidth="0" marginheight="0">
+		<frame src="contents.jsp" name="right" scrolling="auto" noresize>
+	</frameset>
+</frameset>
 <body>
-	<div class="wrapper"> 
-		<div class="header">
-			<div class="logo">
-				<img src="../img/test_Logo.PNG" style="width:100%; height:100%;">
-			</div>
-			<div class="banner">
-				<img src="../img/main_banner.PNG" style="width:90%; height:95%;">
-			</div>
-		</div>
+</body>
+</html>
+	<!-- <div class="wrapper"> 
 		<div class="body">
 			<div class="menu">
 				<div class="login_box">
@@ -63,8 +68,9 @@
 			<div class="contents">
 				<div class="contents title"></div>
 				<div class="conetens body">
-					<!-- 페이지 사이즈 고정적용하기 -->
-					<%@ include file="../menu/menu_list_main.jsp" %>
+
+				<jsp:include page="../menu/menu_list_main.jsp" />
+				
 				</div>
 			</div>
 			<div class="side_bar">
@@ -75,5 +81,4 @@
 			<div>&lt; Copyright 2022. Davidev. All right reserved. &gt;</div>
 		</div>
 	</div>
-</body>
-</html>
+-->
