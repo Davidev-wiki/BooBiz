@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BooBiz</title>
-
 <style>
 	body{
 		width:100%;
@@ -24,7 +24,7 @@
 			height:300px;
 		}
 		section {
-			height:800px;
+			height:1700px;
 		}
 		.sub_menu {
 			line-height:50px;
@@ -52,12 +52,12 @@
 			<a href="nav_08.jsp" onclick="$.fn.menu_click(1);" target="main">동향</a>
 		</div>
 	</nav>
-		<main id="main">
-			<iframe name="main" src="nav_01.jsp" width="100%" height="100%"></iframe>
-		</main>
-		<section>
-			<iframe name="section" src="../img/main.jpg" width="100%" height="100%"></iframe>
-		</section>
+	<main id="main">
+		<iframe name="main" src="nav_01.jsp" width="100%" height="100%"></iframe>
+	</main>
+	<section>
+		<iframe name="section" src="../img/main.jpg" width="100%" height="100%"></iframe>
+	</section>
 	<footer> Copyright 2022. Davidev. All right reserved.</footer>
 </body>
 </html>
