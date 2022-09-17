@@ -610,7 +610,7 @@
     // Davidev 페이지 이동 로직 추가
     if (this.distanceRan > this.highestScore) {
     	alert("우와, 소질이 있으시군요~?!");
-    	location.href="main.jsp";
+    	location.href="./main.jsp";
     this.highestScore = Math.ceil(this.distanceRan);
     this.distanceMeter.setHighScore(this.highestScore);
     }
@@ -2546,10 +2546,16 @@ html[subframe] body {
     margin-top: 30px;
   }
 }
+	header {
+		text-align:center;
+		font-size:15px;
+	}
 </style>
 </head>
 
 <body id="t">
+<header>휴식이 필요할 때는 공룡게임!<br>
+[Space]를 누르면 시작합니다!</header>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -2602,7 +2608,6 @@ html[subframe] body {
       document.getElementById("main-frame-notchrome").style.display="";
 	}
   </script>
-
 
 </body>
 
