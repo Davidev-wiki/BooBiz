@@ -11,10 +11,11 @@ $(document).ready(function(){
 	});
 	
 	$.fn.extend({
+		
 		menu_click : function(num) {
 			idValue = num;
 			if(idValue != 0) {
-				$("#main").css('height', '200px');
+				$("#main").css('height', '300px');
 			} else {
 				$("#main").css('height', '300px');
 			}

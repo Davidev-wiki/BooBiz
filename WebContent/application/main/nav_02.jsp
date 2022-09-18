@@ -5,13 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <style>
-	body{
+	body {
 		text-align:center;
 	}
-	h5{
-		text:underline;
+	section {
+		margin-top:100px;
 	}
-	
+	footer {
+		margin-top:100px;
+	}
 </style>
 </head>
 <body>
@@ -29,7 +31,7 @@
 		<a href="http://www.iros.go.kr" target="section">인터넷 등기소</a>
 	</section>
 	<footer>
-		<p><i>문의 : accelertor@kakao.com</i></p>
+		<p><i>컨텐츠 제보 및 문의 : accelertor@kakao.com</i></p>
 	</footer>
 </body>
 </html>

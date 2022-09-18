@@ -7,28 +7,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BooBiz</title>
 <style>
-	body{
-		width:100%;
-		height:100%;
+	.wrapper {
+		background-color:#F3E2A9;
+		overflow:auto;
 	}
-		header, nav, main, section, footer {
-			text-align:center;
-		}
+		header {
+			float:left;
+		}	
+			h1 {
+				margin-left:200px;
+			}
+			
 		nav {
-			background-color:lightgrey;
-			border:1px solid;
-			height:50px;
+			width:200px;
+			height:400px;
+			float:left;
 		}
 		main {
 			background-color:white;
-			height:300px;
+			margin-left:202px;
+			margin-right:206px;
+			height:400px;
 		}
+		article {
+			width:200px;
+			height:400px;
+			float:right;
+		}
+		
 		section {
+			margin-top:10px;
+			width:100%;
 			height:1700px;
 		}
 		.sub_menu {
 			line-height:50px;
 		}
+		h1, h3 {
+			text-align:center;
+		}
+		
+		h3 {
+			margin-top:0px;
+			margin-bottom:0px;
+		}
+		footer {
+			margin-top:8px;
+			text-align:center;
+		}
+		a:link    { color: teal; }
+		a:visited { color: maroon; text-decoration: none }
+		a:hover   { color: yellow; text-decoration: none }
+		a:active  { color: red; text-decoration: none }
 </style>
 
 <!-- script src -->
@@ -37,27 +67,35 @@
 
 </head>
 <body>
+<div class="wrapper">
 	<header>
-		<a href="index.jsp"><h1>창업을 준비하는 당신을 위한 라이브러리!</h1></a>
+		<a href="index.jsp">
+			<img src="../img/dino2.png" width="198px" height="76px">
+		</a>
 	</header>
+		<h1>다양한 창업 정보를 확인해 보세요!</h1>		
+	<article>
+		<iframe name="article" src="advert_side.jsp" width="100%" height="100%"></iframe>
+	</article>
 	<nav>
 		<div class="sub_menu">
-			<a href="nav_01.jsp" onclick="$.fn.menu_click(0);" target="main">공룡게임</a> |
-			<a href="nav_02.jsp" onclick="$.fn.menu_click(1);" target="main">기초지식</a> |
-			<a href="nav_03.jsp" onclick="$.fn.menu_click(1);" target="main">창업관련기관</a> |
-			<a href="nav_04.jsp" onclick="$.fn.menu_click(1);" target="main">기업지식재산권</a> |
-			<a href="nav_05.jsp" onclick="$.fn.menu_click(1);" target="main">투자유치</a> |
-			<a href="nav_06.jsp" onclick="$.fn.menu_click(1);" target="main">수출</a> |
-			<a href="nav_07.jsp" onclick="$.fn.menu_click(1);" target="main">외주플랫폼</a> |
-			<a href="nav_08.jsp" onclick="$.fn.menu_click(1);" target="main">동향</a>
+			<a href="nav_01.jsp" target="main"><h3>공룡게임</h3></a>
+			<a href="nav_02.jsp" target="main"><h3>기초지식</h3></a>
+			<a href="nav_03.jsp" target="main"><h3>창업관련기관</h3></a>
+			<a href="nav_04.jsp" target="main"><h3>기업지식재산권</h3></a>
+			<a href="nav_05.jsp" target="main"><h3>투자유치</h3></a>
+			<a href="nav_06.jsp" target="main"><h3>수출</h3></a>
+			<a href="nav_07.jsp" target="main"><h3>외주플랫폼</h3></a>
+			<a href="nav_08.jsp" target="main"><h3>동향</h3></a>
 		</div>
 	</nav>
 	<main id="main">
 		<iframe name="main" src="nav_01.jsp" width="100%" height="100%"></iframe>
 	</main>
 	<section>
-		<iframe name="section" src="../img/main.jpg" width="100%" height="100%"></iframe>
+		<iframe name="section" src="contents_main.jsp" width="100%" height="100%"></iframe>
 	</section>
 	<footer> Copyright 2022. Davidev. All right reserved.</footer>
+</div>
 </body>
 </html>

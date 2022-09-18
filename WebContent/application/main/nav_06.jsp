@@ -5,13 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <style>
-	body{
+	body {
 		text-align:center;
 	}
-	h5{
-		text:underline;
+	section {
+		margin-top:100px;
 	}
-	
 </style>
 </head>
 <body>
@@ -29,7 +28,6 @@
 		</article>
 	</section>
 	<footer>
-		<p><i>문의 : accelertor@kakao.com</i></p>
 	</footer>
 </body>
 </html>

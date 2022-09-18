@@ -609,8 +609,8 @@
     // Update the high score. 
     // Davidev 페이지 이동 로직 추가
     if (this.distanceRan > this.highestScore) {
-    	alert("우와, 소질이 있으시군요~?!");
-    	location.href="./main.jsp";
+    	alert("실력이 대단하시네요!!");
+    	location.href="./advert_main.jsp";
     this.highestScore = Math.ceil(this.distanceRan);
     this.distanceMeter.setHighScore(this.highestScore);
     }
