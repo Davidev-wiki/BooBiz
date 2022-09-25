@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-	<h2>오늘의 추천 컨텐츠입니다!</h2>
+	<h2>여기는 광고 페이지 입니다!</h2>
 </header>
 </body>
 </html>
